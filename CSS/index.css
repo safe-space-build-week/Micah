@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-container h1 {
+  font-size: 3.4rem;
+}
+.nav-container nav {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 3px solid black;
+}
+.nav-container a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 10px;
+}
+body h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+}
+body .top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .top-content p {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  body .top-content {
+    flex-direction: column;
+  }
+}
+body .img-container {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid black;
+}
+body .mid-img {
+  width: 50%;
+  padding: 10px;
+  border-radius: 100px;
+}
+@media (max-width: 500px) {
+  body .mid-img {
+    width: 100%;
+  }
+}
+body .content-3 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .content-3 p {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+body .content-3 button {
+  padding: 10px;
+}
+body .info-tabs {
+  width: 70%;
+  margin: 45px auto;
+  display: flex;
+  border: 1px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .info-tabs .tabs {
+  width: 100%;
+  height: 275px;
+}
+body .info-tabs .tabs p {
+  font-size: 1.3rem;
+}
+body .info-tabs .tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+body .info-tabs .tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+body .info-tabs .tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+body .info-tabs .tabs .tabs-item-selected {
+  display: block;
+}
+body .info-tabs .tabs .tabs-links {
+  display: flex;
+  background-color: red;
+}
+body .info-tabs .tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: red;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+body .info-tabs .tabs .tabs-link:hover {
+  background-color: red;
+}
+body .info-tabs .tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid red;
+  background-color: white;
+  color: black;
+}
+body .info-tabs .tabs .tabs-link-selected:hover {
+  background-color: white;
+}
+footer {
+  border-top: 3px solid black;
+}
+* {
+  box-sizing: border-box;
+}

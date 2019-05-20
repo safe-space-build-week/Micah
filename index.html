@@ -8,14 +8,16 @@
 
     <title>Safe Space</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
+        <script defer="defer" src="./componets/tabs.js"></script>
     <header>
         <div class='nav-container'>
+            <h1>Safe Space</h1>
             <nav>
                 <a href="#">Product</a>
                 <a href="#">Vision</a>
@@ -28,7 +30,45 @@
     </header>
     </div>
     <!--Container-->
-    <section class='display-tabs'>
+    <div class="info-tabs">
+            <div class="tabs">
+                <div class="tabs-links">
+                    <div class="tabs-link tabs-link-selected" data-tab="1">Mental Health</div>
+                    <div class="tabs-link" data-tab="2">Depression</div>
+                    <div class="tabs-link" data-tab="3">Anxiety</div>
+                    
+                </div>
+                <div class="tabs-items">
+                    <div class="tabs-item tabs-item-selected" data-tab="1">
+                        <div class="tabs-item-title">Mental Health</div>
+                        <div class="tabs-item-description">
+                            <p>Save your mental health with Safe Space, an app that reminds you that you are not alone, 
+                                and that you are capable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs-item" data-tab="2">
+                        <div class="tabs-item-title">Depression</div>
+                        <div class="tabs-item-description">
+                            <p>(noun) - feelings of severe despondency and dejection. <br><br>
+                                With Safe Space, you can help yourself keep depression at bay.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs-item" data-tab="3">
+                        <div class="tabs-item-title">Anxiety</div>
+                        <div class="tabs-item-description">
+                            <p>
+                         (noun) - a feeling of worry, nervousness, or unease, typically about an imminent event or something with an uncertain outcome.<br><br>
+                         Safe Space will help you remember that you can overcome your anxiety.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section class='display-tabs'>
         <div class="tabs">
             <div class="topics">
                 <span class="title">What We Do:</span>
@@ -39,9 +79,11 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
+    <div class = 'top-content'>
     <section class='content-1'>
+        <h2>How It Helps</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim a
@@ -53,6 +95,7 @@
 
     </section> <!--content-1-->
     <section class = 'content-2'>
+        <h2>How To Start</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim a
@@ -63,8 +106,12 @@
         </p>
 
     </section> <!---Content-2-->
-    <img class = 'mid-img' src = './assets/depression.jpg' />
+</div><!---top-content-->
+    <div class = 'img-container'>
+    <img class = 'mid-img' src = './assets/depression2.jpg' />
+    </div>
     <section class = 'content-3'>
+        <h2> Sign Up </h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim a
