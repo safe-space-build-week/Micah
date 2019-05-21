@@ -1,5 +1,8 @@
 body {
 
+    p{
+        font-family: 'PT Sans', sans-serif;
+    }
     .main-container {
         max-width: 800px;
         width: 100%;
@@ -240,4 +243,27 @@ body {
 
 
     }
+
+    
+    .new-header-container{
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid @white;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        h1{
+            font-size: @font-large;
+            font-family: 'Pacifico', cursive;
+        }
+        .dropdown{
+            z-index: 2;
+    position: absolute;
+    left: 25px;
+    cursor: pointer;
+
+}
+        }
+    
+
 }

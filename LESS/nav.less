@@ -2,14 +2,27 @@
     .center(center, center);
    flex-direction: column;
    
+//    @media @mobile{
+//        display: none;
+//    }
    
 
    h1{
        font-size: @title-size;
+       font-family: 'Pacifico', cursive;
+       padding: 10px;
+       
+       @media @mobile {
+           display: none;
+       }
    }
    nav{
        display: flex;
        justify-content: space-evenly;
+       @media @mobile{
+           display: none;
+       }
+      
       
 
    }
@@ -26,4 +39,8 @@ header{
     position: sticky;
     top: 0;
     background: #e1f0e1;
+    @media @mobile{
+        display: none;
+
+    }
 }
