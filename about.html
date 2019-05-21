@@ -10,11 +10,15 @@
 
 
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <script defer="defer" src="./componets/tabs.js"></script>
+    <script defer="defer" src="./events/events.js"></script>
+    <script defer="defer" src="./componets/menu.js"></script>
     <header>
         <div class='nav-container'>
             <h1>Safe Space</h1>
@@ -22,66 +26,119 @@
                 <a href="#">Log In</a>
                 <a href="about.html">About</a>
                 <a href="index.html">Home</a>
-               
+
             </nav>
 
 
     </header>
     </div>
     <!--Container-->
-  
+    <div class='new-header-container'>
+            <h1>Safe Space</h1>
+            <div class='dropdown'>
+    
+                <div class='dropdown-button '>Menu</div>
+                <div class='dropdown-hidden menu-content'>
+                    <a href="https://safespace-app.netlify.com/">Login</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html">Home</a>
+                </div>
+    
+    
+            </div>
+        </div>
 
 
     <!-- <section class='top-content'> -->
-    <div class='main-container'>
-        <div class='content'>
+    <div class='main-container-about'>
+        <h1>About the Safe Space Team</h1>
+        <div class='content-about'>
             <div class='text-content'>
-                <h2>How It Helps</h2>
+                <h2>Jeremy Brady(FE)</h2>
                 <p>
-                    With Safe Space, you can sign up for daily messages curated by yourself to give you encouragment
-                    throughout the day.
-                    These messages can be simple quotes, your favoirte memories, or a list of people that believe in
-                    you.
+                    Jeremy's life before Lambda was the typical struggles of someone who did not pursue higher
+                    education. Switching gears now
+                    and going into a second Career after spending years driving across the country in a Semi-Truck, to
+                    better his future for
+                    him and his family. Jeremy handled the Front-End
+                    Application creation using React and Redux with 3rd party libraries, as well as served as a Team
+                    Lead for this project.
                 </p>
             </div>
             <!--text-content-->
-            <div class='img-container1'>
-                <img class='mid-img' src='./assets/tree.jpg' alt='a pic of a tree' />
+            <div class='img-container2'>
+                <a href='https://github.com/jbdigitalgeek'> <img class='about-img'
+                        src='https://ca.slack-edge.com/T4JUEB3ME-UG1URRJD7-625a33249ad6-72' alt='jeremy picture' /></a>
             </div>
         </div>
-        <div class='content'>
-                <div class='text-content'>
-                    <h2>How It Helps</h2>
-                    <p>
-                        With Safe Space, you can sign up for daily messages curated by yourself to give you encouragment
-                        throughout the day.
-                        These messages can be simple quotes, your favoirte memories, or a list of people that believe in
-                        you.
-                    </p>
-                </div>
-                <!--text-content-->
-                <div class='img-container1'>
-                    <img class='mid-img' src='./assets/tree.jpg' alt='a pic of a tree' />
-                </div>
+        <div class='content-about'>
+            <div class='text-content'>
+                <h2>Daniel O'Neill (BE)</h2>
+                <p>
+                    Dan worked on the back end of this website.
+                </p>
             </div>
-            <div class='content'>
-                    <div class='text-content'>
-                        <h2>How It Helps</h2>
-                        <p>
-                            With Safe Space, you can sign up for daily messages curated by yourself to give you encouragment
-                            throughout the day.
-                            These messages can be simple quotes, your favoirte memories, or a list of people that believe in
-                            you.
-                        </p>
-                    </div>
-                    <!--text-content-->
-                    <div class='img-container1'>
-                        <img class='mid-img' src='./assets/tree.jpg' alt='a pic of a tree' />
-                    </div>
-                </div>
+            <!--text-content-->
+            <div class='img-container2'>
+                <a href=https://github.com/danpatrickoneill> <img class='about-img'
+                    src='https://ca.slack-edge.com/T4JUEB3ME-UF76P36CU-2135e6ae349c-72' alt='dan picture' /> </a>
+            </div>
+        </div>
+        <div class='content-about'>
+            <div class='text-content'>
+                <h2>Blake Goms (UI)</h2>
+                <p>
+                    Blake worked on the User Interface and design of the webpage.
+                </p>
+            </div>
+            <!--text-content-->
+            <div class='img-container2'>
+                <a href='https://github.com/Blake-Goms'>
+                    <img class='about-img' src='https://ca.slack-edge.com/T4JUEB3ME-UHE8MD25S-bddc09e4de58-72'
+                        alt='blake picture' />
+                </a>
+            </div>
+        </div>
+        <div class='content-about'>
+            <div class='text-content'>
+                <h2>Winnie Song (UI)</h2>
+                <p>
+                    Winnie Song (UI) - Prior to Lambda, she had no coding experience. With a strong background in design
+                    and interpersonal
+                    communication, Winnie contributed to Safe Space as a designer, programmer, and team player.
+                    “A safe space for people to work on their mental health with support
+                    from their loved ones is an important tool for society to thrive.”
+                </p>
+            </div>
+            <!--text-content-->
+            <div class='img-container2'>
+                <a href='https://github.com/windixxie'>
+                    <img class='about-img' src='https://ca.slack-edge.com/T4JUEB3ME-UHEEXDBCL-0f39785a887e-72'
+                        alt='winnie picture' />
+                </a>
+            </div>
+        </div>
+        <div class='content-about no-bottom-border'>
+            <div class='text-content'>
+                <h2>Micah Jones(UI)</h2>
+                <p>
+                    Micah began learning how to be a web-developer at Lambda school in April of 2019. He contributed to
+                    the webpage design
+                    and functionality of Safe Space.
+                    Among his interests are coding, sports, gaming and just being with friends and family.
+                </p>
+            </div>
+            <!--text-content-->
+            <div class='img-container2'>
+                <a href='https://github.com/micahjones13'>
+                    <img class= 'about-img' src='https://ca.slack-edge.com/T4JUEB3ME-UHHC6TY81-ae4dd26fa9df-72'
+                        alt='micah picture' />
+                </a>
+            </div>
+        </div>
         <!--content-1-->
-    
-     
+
+
     </div>
     <!--main-container-->
     <footer>

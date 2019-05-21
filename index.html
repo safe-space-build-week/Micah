@@ -10,23 +10,41 @@
 
 
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
     <script defer="defer" src="./componets/tabs.js"></script>
+    <script defer="defer" src="./events/events.js"></script>
+    <script defer="defer" src="./componets/menu.js"></script>
     <header>
         <div class='nav-container'>
             <h1>Safe Space</h1>
             <nav>
-                <a href="#">Log In</a>
+                <a href="https://safespace-app.netlify.com/">Log In</a>
                 <a href="about.html">About</a>
-               
+
             </nav>
 
-
+        </div>
     </header>
+    <div class='new-header-container'>
+        <h1>Safe Space</h1>
+        <div class='dropdown'>
+
+            <div class='dropdown-button '>Menu</div>
+            <div class='dropdown-hidden menu-content'>
+                <a href="https://safespace-app.netlify.com/">Login</a>
+                <a href="about.html">About</a>
+            </div>
+
+
+        </div>
     </div>
+
     <!--Container-->
     <div class="info-tabs">
         <div class="tabs">
@@ -83,7 +101,7 @@
             </div>
             <!--text-content-->
             <div class='img-container1'>
-                <img class='mid-img' src='./assets/tree.jpg' alt='a pic of a tree' />
+                <img src='./assets/tree.jpg' alt='a pic of a tree' />
             </div>
         </div>
         <!--content-1-->
@@ -99,7 +117,7 @@
                 </p>
             </div>
             <div class='img-container1'>
-                <img class='mid-img' src='./assets/stones.jpg' alt='a pic some cool rocks' />
+                <img src='./assets/stones.jpg' alt='a pic some cool rocks' />
             </div>
         </div>
         <!---Content-2-->
@@ -108,6 +126,7 @@
         <!-- <div class='img-container'>
         <img class='mid-img' src='./assets/tree.jpg' />
     </div> -->
+        <hr>
         <section class='content-3'>
             <h2> Sign Up </h2>
             <p>
@@ -118,7 +137,7 @@
                 <br>
                 Love, the Safe Space Team
             </p>
-            <div class='sign-up'>Sign Up</div>
+            <div class='sign-up'><a href="https://safespace-app.netlify.com/">Sign Up</a></div>
         </section>
         <!--Content-3-->
     </div>
