@@ -143,6 +143,7 @@ table {
   font-size: 1.5rem;
   text-decoration: none;
   margin: 10px;
+  color: #006400;
 }
 header {
   border-bottom: 3px solid black;
@@ -198,8 +199,9 @@ body .content-about {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 100%;
   padding: 2%;
+  border-bottom: 2px dashed green;
 }
 body .content-about h2 {
   font-size: 1.5rem;
@@ -207,7 +209,7 @@ body .content-about h2 {
 }
 @media (max-width: 500px) {
   body .content-about {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 body .inverse-content {
@@ -260,16 +262,22 @@ body .content-3 p {
 }
 body .content-3 .sign-up {
   padding: 10px;
-  background-color: darkgreen;
+  background-color: #006400;
   width: 30%;
   text-align: center;
   font-size: 1.3rem;
-  color: white;
-  border: 1px solid black;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 body .content-3 .sign-up:hover {
-  background-color: white;
-  color: black;
+  background-color: #FFF;
+}
+body .content-3 .sign-up:hover a {
+  color: #000;
+}
+body .content-3 .sign-up a {
+  text-decoration: none;
+  color: #FFF;
 }
 body .info-tabs {
   width: 70%;

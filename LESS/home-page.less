@@ -50,15 +50,16 @@ body {
         flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
-        width: 80%;
+        width: 100%;
         padding: 2%;
+        border-bottom: 2px dashed green;
         h2{
             font-size: @font-med;
             font-weight: bold;
         }
 
         @media @mobile {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
 
     }
@@ -134,15 +135,23 @@ body {
 
         .sign-up{
             padding: 10px;
-            background-color: darkgreen;
+            background-color: @sign-up-bg;
             width: 30%;
             text-align: center;
             font-size: @font-small;
-            color: white;
-            border: 1px solid black;
+            border: 1px solid @black;
+            cursor: pointer;
+           
             &:hover{
-                background-color: white;
-                color: black;
+                background-color: @sign-up-hover-bg;
+                a{
+                    color: @sign-up-hover-color;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: @sign-up-text-color;
+                
             }
         }
       
