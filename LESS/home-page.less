@@ -1,22 +1,30 @@
 body {
 
-    p{
+    p {
         font-family: 'PT Sans', sans-serif;
     }
+    h1, h2, a {
+        font-family: 'PT Sans', sans-serif;
+    }
+
     .main-container {
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
+
+       
     }
-    .main-container-about{
+
+    .main-container-about {
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
         background-color: rgb(215, 238, 215);
-        h1{
-            font-size:@font-large;
+
+        h1 {
+            font-size: @font-large;
             text-align: center;
-            text-decoration: underline;
+            text-decoration: underline @darkgreen;
             padding: 10px;
         }
     }
@@ -47,6 +55,8 @@ body {
         }
 
     }
+
+   
     .content-about {
         display: flex;
         flex-wrap: wrap;
@@ -56,7 +66,8 @@ body {
         width: 100%;
         padding: 2%;
         border-bottom: 2px dashed green;
-        h2{
+        
+        h2 {
             font-size: @font-med;
             font-weight: bold;
         }
@@ -65,6 +76,9 @@ body {
             flex-direction: column-reverse;
         }
 
+    }
+    .no-bottom-border{
+        border-bottom: 0;
     }
 
     .inverse-content {
@@ -80,6 +94,7 @@ body {
         font-size: @font-large;
         text-align: center;
         padding: 5px;
+        text-decoration: underline @darkgreen;
     }
 
     // .top-content{
@@ -105,6 +120,7 @@ body {
 
 
     }
+
     .img-container2 {
         width: 48%;
         display: flex;
@@ -117,13 +133,19 @@ body {
 
     }
 
-    .mid-img {
+    img {
 
         padding: 10px;
         border-radius: 100px;
 
 
     }
+    .about-img{
+        &:hover{
+            opacity: .5;
+        }
+    }
+   
 
     .content-3 {
         padding: 10px;
@@ -136,7 +158,7 @@ body {
             font-size: @font-small;
         }
 
-        .sign-up{
+        .sign-up {
             padding: 10px;
             background-color: @sign-up-bg;
             width: 30%;
@@ -144,20 +166,22 @@ body {
             font-size: @font-small;
             border: 1px solid @black;
             cursor: pointer;
-           
-            &:hover{
+
+            &:hover {
                 background-color: @sign-up-hover-bg;
-                a{
+
+                a {
                     color: @sign-up-hover-color;
                 }
             }
-            a{
+
+            a {
                 text-decoration: none;
                 color: @sign-up-text-color;
-                
+
             }
         }
-      
+
 
     }
 
@@ -166,7 +190,7 @@ body {
         margin: 45px auto;
         display: flex;
         border: 1px solid black;
-
+        z-index: 1;
         border-radius: 10px;
         overflow: hidden;
 
@@ -177,6 +201,7 @@ body {
         .tabs {
             width: 100%;
             height: 275px;
+            
 
             p {
                 font-size: @font-small;
@@ -204,6 +229,7 @@ body {
 
             .tabs-item-selected {
                 display: block;
+               
             }
 
             .tabs-links {
@@ -225,10 +251,10 @@ body {
             }
 
             .tabs-link-selected {
-                z-index: 2;
+                
                 border-right: 1px solid darkgreen;
                 background-color: white;
-                ;
+               
                 color: black;
 
                 &:hover {
@@ -244,26 +270,78 @@ body {
 
     }
 
-    
-    .new-header-container{
-        width: 100%;
-        height: 70px;
-        border-bottom: 1px solid @white;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        h1{
-            font-size: @font-large;
-            font-family: 'Pacifico', cursive;
-        }
-        .dropdown{
-            z-index: 2;
-    position: absolute;
-    left: 25px;
-    cursor: pointer;
 
-}
+    .new-header-container {
+        display: none; //don't display until mobile view
+
+
+        @media @mobile {
+
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            border-bottom: 1px solid @white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: @mint;
+
+
+            h1 {
+                font-size: @font-large;
+                font-family: 'Pacifico', cursive;
+            }
+
+            .dropdown {
+                z-index: 2;
+                position: absolute;
+                left: 25px;
+                cursor: pointer;
+
+                @media @mobile {
+
+                    display: block; //at mobile view, display the menu
+
+                    .dropdown-button{
+                        background: @darkgreen;
+                        color: @white;
+                        font-weight: bold;
+                        padding: 10px;
+                        border: 2px solid green;
+                    }
+
+                    .menu-content {
+                        width: 185%;
+                        position: absolute;
+                        background-color: @mint;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 10px;
+                        border: 2.5px solid @darkgreen;
+
+                        a{
+                            padding: 10px 0;
+                            text-align: center;
+                            text-decoration: none;
+                            color: black;
+
+                        }
+                    }
+
+                    .dropdown-hidden {
+                        display: none;
+                    }
+
+
+
+
+                }
+
+            }
         }
-    
+    }
+
 
 }

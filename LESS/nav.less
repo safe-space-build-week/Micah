@@ -1,6 +1,7 @@
 .nav-container{
     .center(center, center);
    flex-direction: column;
+   z-index: 100;
    
 //    @media @mobile{
 //        display: none;
@@ -18,6 +19,7 @@
    }
    nav{
        display: flex;
+      
        justify-content: space-evenly;
        @media @mobile{
            display: none;
@@ -31,6 +33,9 @@
        text-decoration: none;
         margin: 10px;
         color: @darkgreen;
+        &:hover{
+            color:lightgreen;
+        }
    }
 
 }
@@ -38,6 +43,7 @@ header{
     border-bottom: 3px solid black;
     position: sticky;
     top: 0;
+    
     background: #e1f0e1;
     @media @mobile{
         display: none;
