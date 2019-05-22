@@ -1,5 +1,5 @@
 body {
-
+    background: @mintcream;
     p {
         font-family: 'PT Sans', sans-serif;
     }
@@ -19,12 +19,12 @@ body {
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
-        background-color: rgb(215, 238, 215);
+        background-color: @about-background-color;
 
         h1 {
             font-size: @font-large;
             text-align: center;
-            text-decoration: underline @darkgreen;
+            // text-decoration: underline @underline-color;
             padding: 10px;
         }
     }
@@ -51,7 +51,7 @@ body {
         align-items: center;
 
         @media @mobile {
-            flex-direction: column;
+            .column(column);
         }
 
     }
@@ -65,7 +65,7 @@ body {
         align-items: center;
         width: 100%;
         padding: 2%;
-        border-bottom: 2px dashed green;
+        border-bottom: 2px dashed @about-border-color;
         
         h2 {
             font-size: @font-med;
@@ -73,7 +73,7 @@ body {
         }
 
         @media @mobile {
-            flex-direction: column-reverse;
+            .column(column-reverse);
         }
 
     }
@@ -94,21 +94,9 @@ body {
         font-size: @font-large;
         text-align: center;
         padding: 5px;
-        text-decoration: underline @darkgreen;
+        text-decoration: underline @underline-color;
     }
 
-    // .top-content{
-    //     // .center(center, center);
-    //     p{
-    //         padding: 10px;
-    //         text-align: center;
-    //         font-size: @font-small;
-    //     }
-    //     @media @mobile{
-    //         flex-direction: column;
-    //     }
-
-    //}
     .img-container1 {
         width: 48%;
         display: flex;
@@ -164,7 +152,7 @@ body {
             width: 30%;
             text-align: center;
             font-size: @font-small;
-            border: 1px solid @black;
+            border: 1px solid @border-color;
             cursor: pointer;
 
             &:hover {
@@ -189,12 +177,12 @@ body {
         width: 70%;
         margin: 45px auto;
         display: flex;
-        border: 1px solid black;
+        border: 1px solid @border-color;
         z-index: 1;
         border-radius: 10px;
         overflow: hidden;
 
-        @media @mobile {
+        @media @800px {
             display: none;
         }
 
@@ -212,16 +200,16 @@ body {
                 height: 300px;
                 display: flex;
                 justify-content: center;
-                padding-top: 60px;
+                padding-top: 20px;
             }
 
             .tabs-item {
                 display: none;
 
-                width: 75%;
+                width: 90%;
 
                 .tabs-item-title {
-                    font-size: 24px;
+                    font-size: @font-med;
                     font-weight: bold;
                     padding-bottom: 10px;
                 }
@@ -234,26 +222,26 @@ body {
 
             .tabs-links {
                 display: flex;
-                background-color: green;
+                background-color: @tabs-link-background-color;
             }
 
             .tabs-link {
                 padding: 20px 25px;
-                font-size: 24px;
-                background-color: green;
+                font-size: @font-med;
+                background-color: @tabs-link-background-color;
                 border-right: 1px solid white;
                 color: white;
                 cursor: pointer;
 
                 &:hover {
-                    background-color: lightgreen;
+                    background-color: @tabs-hover-color;
                 }
             }
 
             .tabs-link-selected {
                 
-                border-right: 1px solid darkgreen;
-                background-color: white;
+                border-right: 1px solid @tabs-border-color;
+                background-color: @body-background-color;
                
                 color: black;
 
