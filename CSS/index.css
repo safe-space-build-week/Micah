@@ -162,7 +162,7 @@ table {
   color: lightgreen;
 }
 header {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #000;
   position: sticky;
   top: 0;
   background: #e1f0e1;
@@ -171,6 +171,9 @@ header {
   header {
     display: none;
   }
+}
+body {
+  background: #f5fffa;
 }
 body p {
   font-family: 'PT Sans', sans-serif;
@@ -194,7 +197,6 @@ body .main-container-about {
 body .main-container-about h1 {
   font-size: 2rem;
   text-align: center;
-  text-decoration: underline #006400;
   padding: 10px;
 }
 body .text-content {
@@ -230,7 +232,7 @@ body .content-about {
   align-items: center;
   width: 100%;
   padding: 2%;
-  border-bottom: 2px dashed green;
+  border-bottom: 2px dashed #008000;
 }
 body .content-about h2 {
   font-size: 1.5rem;
@@ -319,12 +321,12 @@ body .info-tabs {
   width: 70%;
   margin: 45px auto;
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #000;
   z-index: 1;
   border-radius: 10px;
   overflow: hidden;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   body .info-tabs {
     display: none;
   }
@@ -341,14 +343,14 @@ body .info-tabs .tabs .tabs-items {
   height: 300px;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 body .info-tabs .tabs .tabs-item {
   display: none;
-  width: 75%;
+  width: 90%;
 }
 body .info-tabs .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -357,22 +359,22 @@ body .info-tabs .tabs .tabs-item-selected {
 }
 body .info-tabs .tabs .tabs-links {
   display: flex;
-  background-color: green;
+  background-color: #008000;
 }
 body .info-tabs .tabs .tabs-link {
   padding: 20px 25px;
-  font-size: 24px;
-  background-color: green;
+  font-size: 1.5rem;
+  background-color: #008000;
   border-right: 1px solid white;
   color: white;
   cursor: pointer;
 }
 body .info-tabs .tabs .tabs-link:hover {
-  background-color: lightgreen;
+  background-color: #90EE90;
 }
 body .info-tabs .tabs .tabs-link-selected {
-  border-right: 1px solid darkgreen;
-  background-color: white;
+  border-right: 1px solid #006400;
+  background-color: #f5fffa;
   color: black;
 }
 body .info-tabs .tabs .tabs-link-selected:hover {
@@ -436,12 +438,22 @@ body .new-header-container {
   }
 }
 footer {
-  border-top: 3px solid black;
+  border-top: 3px solid #000;
 }
 footer p {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   text-align: center;
   padding: 15px;
+  background: #d7eed7;
+}
+footer .link {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: underline;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Pacifico', cursive;
 }
 * {
   box-sizing: border-box;
