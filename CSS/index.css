@@ -306,9 +306,11 @@ body .content-3 .sign-up {
   font-size: 1.3rem;
   border: 1px solid #000;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 body .content-3 .sign-up:hover {
   background-color: #FFF;
+  transform: scale(1.2);
 }
 body .content-3 .sign-up:hover a {
   color: #000;

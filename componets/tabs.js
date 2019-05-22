@@ -23,7 +23,7 @@ class TabLink {
   
       // Remove the 'tabs-link-selected' class from each element in links
       Array.from(links).forEach((item) => {
-        item.classList.remove('tabs-link-selected') // might want to toggle isntead, idk
+        item.classList.remove('tabs-link-selected') 
       });
   
       // Add class .tabs-link-selected to element
