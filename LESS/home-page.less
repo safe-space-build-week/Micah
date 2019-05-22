@@ -154,10 +154,10 @@ body {
             font-size: @font-small;
             border: 1px solid @border-color;
             cursor: pointer;
-
+            transition: transform .2s;
             &:hover {
                 background-color: @sign-up-hover-bg;
-
+                transform: scale(1.2);
                 a {
                     color: @sign-up-hover-color;
                 }
@@ -177,7 +177,7 @@ body {
         width: 70%;
         margin: 45px auto;
         display: flex;
-        border: 1px solid @border-color;
+        border: 3px solid @tab-container-border-color;
         z-index: 1;
         border-radius: 10px;
         overflow: hidden;
@@ -223,6 +223,7 @@ body {
             .tabs-links {
                 display: flex;
                 background-color: @tabs-link-background-color;
+                border-bottom: 3px solid @tab-container-border-color;
             }
 
             .tabs-link {
