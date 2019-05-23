@@ -263,8 +263,11 @@ body h2 {
 }
 body .img-container1 {
   width: 48%;
-  display: flex;
-  justify-content: center;
+}
+body .img-container1 img {
+  padding: 10px;
+  border-radius: 100px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   body .img-container1 {
@@ -280,10 +283,6 @@ body .img-container2 {
   body .img-container2 {
     width: 100%;
   }
-}
-body img {
-  padding: 10px;
-  border-radius: 100px;
 }
 body .about-img:hover {
   opacity: 0.5;
