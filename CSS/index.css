@@ -284,6 +284,9 @@ body .img-container2 {
     width: 100%;
   }
 }
+body .about-img {
+  border-radius: 100px;
+}
 body .about-img:hover {
   opacity: 0.5;
 }
