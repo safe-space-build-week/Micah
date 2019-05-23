@@ -19,38 +19,45 @@
     <script defer="defer" src="./componets/tabs.js"></script>
     <script defer="defer" src="./events/events.js"></script>
     <script defer="defer" src="./componets/menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> <!--Green Sock-->
+    <script defer="defer" src="./events/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!--Green Sock-->
     <header>
         <div class='nav-container'>
-            <h1>Safe Space</h1>
+            <h1 class='title'>Safe Space</h1>
             <nav>
-                <a href="#">Log In</a>
-                <a href="about.html">About</a>
-                <a href="index.html">Home</a>
+                <a class='nav-item' href="https://safespace-app.netlify.com/">Log In</a>
+                <a class='nav-item' href="about.html">About</a>
+                <a class='nav-item' href="index.html">Home</a>
 
             </nav>
-
+        </div>
+        <!--nav-container-->
 
     </header>
-    </div>
+
     <!--Container-->
     <div class='new-header-container'>
         <h1>Safe Space</h1>
         <div class='dropdown'>
 
             <div class='dropdown-button '>Menu</div>
+            <!--dropdown-button-->
             <div class='dropdown-hidden menu-content'>
                 <a href="https://safespace-app.netlify.com/">Login</a>
                 <a href="about.html">About</a>
                 <a href="index.html">Home</a>
             </div>
+            <!--menu-content-->
 
 
         </div>
+        <!--dropdown-->
     </div>
+    <!--new-header-container-->
 
 
-    <!-- <section class='top-content'> -->
+
     <div class='main-container-about'>
         <h1>About the Safe Space Team</h1>
         <div class='content-about'>
@@ -71,12 +78,17 @@
                 <a href='https://github.com/jbdigitalgeek'> <img class='about-img'
                         src='https://ca.slack-edge.com/T4JUEB3ME-UG1URRJD7-625a33249ad6-72' alt='jeremy picture' /></a>
             </div>
+            <!--img-container2-->
+
         </div>
+        <!--content-about-->
+
         <div class='content-about'>
             <div class='text-content'>
                 <h2>Daniel O'Neill (BE)</h2>
                 <p>
-                    Dan worked on the back end of this website.
+                    Dan began at Lambda school in February of 2019.
+                    He built the Safe Space backend in Spring Boot along with managing its SMS functionality via Twilio.
                 </p>
             </div>
             <!--text-content-->
@@ -84,7 +96,10 @@
                 <a href=https://github.com/danpatrickoneill> <img class='about-img'
                     src='https://ca.slack-edge.com/T4JUEB3ME-UF76P36CU-2135e6ae349c-72' alt='dan picture' /> </a>
             </div>
+            <!--img-container2---->
         </div>
+        <!--content-about-->
+
         <div class='content-about'>
             <div class='text-content'>
                 <h2>Blake Goms (UI)</h2>
@@ -99,7 +114,10 @@
                         alt='blake picture' />
                 </a>
             </div>
+            <!--img-container2---->
         </div>
+        <!--content-about---->
+
         <div class='content-about'>
             <div class='text-content'>
                 <h2>Winnie Song (UI)</h2>
@@ -118,7 +136,10 @@
                         alt='winnie picture' />
                 </a>
             </div>
+            <!--img-container2---->
         </div>
+        <!--content-about---->
+
         <div class='content-about no-bottom-border'>
             <div class='text-content'>
                 <h2>Micah Jones (UI)</h2>
@@ -136,6 +157,7 @@
                         alt='micah picture' />
                 </a>
             </div>
+            <!--img-container2---->
         </div>
         <!--content-1-->
 
@@ -143,7 +165,8 @@
     </div>
     <!--main-container-->
     <footer>
-        <p>Copyright<a href = index.html> Safe Space</a></p>
+        <p>Copyright<a href=index.html> Safe Space</a></p>
+        <p>Contact Us: <a class = 'link' href = '(762) 2-LAMBDA>(762)'>(762) 2-LAMBDA</a></p>
         <p>Website by Micah Jones</p>
     </footer>
 

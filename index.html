@@ -20,61 +20,78 @@
     <script defer="defer" src="./componets/tabs.js"></script>
     <script defer="defer" src="./events/events.js"></script>
     <script defer="defer" src="./componets/menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> <!--Green SOck-->
+    <script defer="defer" src="./events/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!--Green SOck-->
     <header>
         <div class='nav-container'>
-            <h1 class = 'title'>Safe Space</h1>
+            <h1 class='title'>Safe Space</h1>
             <nav>
-                <a class = 'nav-item' href="https://safespace-app.netlify.com/">Log In</a>
-                <a class = 'nav-item' href="about.html">About</a>
+                <a class='nav-item' href="https://safespace-app.netlify.com/">Log In</a>
+                <a class='nav-item' href="about.html">About</a>
 
             </nav>
 
         </div>
+        <!--nav-container-->
     </header>
+
     <div class='new-header-container'>
         <h1>Safe Space</h1>
         <div class='dropdown'>
 
             <div class='dropdown-button '>Menu</div>
+            <!--dropdown-button-->
             <div class='dropdown-hidden menu-content'>
                 <a href="https://safespace-app.netlify.com/">Login</a>
                 <a href="about.html">About</a>
             </div>
+            <!--menu-content-->
 
 
         </div>
+        <!--dropdown-->
     </div>
+    <!--new-header-container-->
 
     <!--Container-->
     <div class="info-tabs">
         <div class="tabs">
             <div class="tabs-links">
-                <div class="tabs-link tabs-link-selected" data-tab="1">Mental Health</div>
+                <div class="tabs-link tabs-link-selected" data-tab="1">What is Safe Space?</div>
                 <div class="tabs-link" data-tab="2">Depression</div>
                 <div class="tabs-link" data-tab="3">Anxiety</div>
                 <div class="tabs-link" data-tab="4">S.A.D.</div>
 
             </div>
+            <!--tabs-links-->
             <div class="tabs-items">
                 <div class="tabs-item tabs-item-selected" data-tab="1">
-                    <div class="tabs-item-title">Mental Health</div>
+                    <div class="tabs-item-title">What We Do</div>
+                    <!--tabs-item-title-->
                     <div class="tabs-item-description">
-                        <p>Save your mental health with Safe Space, an app that reminds you that you are not alone,
-                            and that you are capable.
+                        <p> Safe space is an app that sends personalized messages to you throughout the day. These
+                            messages are meant to keep your head right - helping you avoid feelings of depression and
+                            anxiety.
                         </p>
                     </div>
+                    <!--tabs-item-description-->
                 </div>
+                <!--tabs-item-->
                 <div class="tabs-item" data-tab="2">
                     <div class="tabs-item-title">Depression</div>
+                    <!--tabs-item-title---->
                     <div class="tabs-item-description">
                         <p>(noun) - feelings of severe despondency and dejection. <br><br>
                             With Safe Space, you can help yourself keep depression at bay.
                         </p>
                     </div>
+                    <!--tabs-item-description---->
                 </div>
+                <!--tabs-item---->
                 <div class="tabs-item" data-tab="3">
                     <div class="tabs-item-title">Anxiety</div>
+                    <!--tabs-item-title---->
                     <div class="tabs-item-description">
                         <p>
                             (noun) - a feeling of worry, nervousness, or unease, typically about an imminent event or
@@ -82,24 +99,40 @@
                             Safe Space will help you remember that you can overcome your anxiety.
                         </p>
                     </div>
+                    <!--tabs-item-description--->
                 </div>
+                <!--tabs-item-->
                 <div class="tabs-item" data-tab="4">
                     <div class="tabs-item-title">S.A.D.</div>
+                    <!--tabs-item-title---->
                     <div class="tabs-item-description">
-                        <p>(noun) - depression associated with late autumn and winter and thought to be caused by a lack of light. <br><br>
+                        <p>(noun) - depression associated with late autumn and winter and thought to be caused by a lack
+                            of light. <br><br>
                             With Safe Space, you can prepare for the lack of light and keep your mind right.
                         </p>
                     </div>
+                    <!--tabs-item-description---->
                 </div>
+                <!--tabs-item---->
             </div>
+            <!--tabs-items-->
         </div>
         <!---tabs-->
     </div>
     <!--info-tabs-->
+
+
+
+    <div class='mobile-para'>
+        <h2>What We Do</h2>
+
+        <p> Safe space is an app that sends personalized messages to you throughout the day. These
+            messages are meant to keep your head right - helping you avoid feelings of depression and anxiety.
+        </p>
+
     </div>
+    <!--mobile-para-->
 
-
-    <!-- <section class='top-content'> -->
     <div class='main-container'>
         <div class='content'>
             <div class='text-content'>
@@ -115,6 +148,7 @@
             <div class='img-container1'>
                 <img src='./assets/tree.jpg' alt='a pic of a tree' />
             </div>
+            <!--img-container1-->
         </div>
         <!--content-1-->
         <div class='inverse-content'>
@@ -128,16 +162,16 @@
 
                 </p>
             </div>
+            <!--text-content---->
             <div class='img-container1'>
                 <img src='./assets/stones.jpg' alt='a pic some cool rocks' />
             </div>
+            <!--img-container1---->
         </div>
-        <!---Content-2-->
-        <!-- </section> -->
-        <!---top-content-->
-        <!-- <div class='img-container'>
-        <img class='mid-img' src='./assets/tree.jpg' />
-    </div> -->
+        <!---inverse-content-->
+
+
+
         <hr>
         <section class='content-3'>
             <h2> Sign Up </h2>
@@ -150,13 +184,15 @@
                 Love, the Safe Space Team
             </p>
             <div class='sign-up'><a href="https://safespace-app.netlify.com/">Sign Up</a></div>
+            <!--sign-up-->
         </section>
         <!--Content-3-->
     </div>
     <!--main-container-->
     <footer>
-            <p>Copyright<a href = index.html> Safe Space</a></p>
-        <p>Website by <a class = 'link' href = 'https://github.com/micahjones13' >Micah Jones</a></p>
+        <p>Copyright<a href=index.html> Safe Space</a></p>
+        <p>Contact Us: <a class = 'link' href = '(762) 2-LAMBDA>(762)'>(762) 2-LAMBDA</a></p>
+        <p>Website by <a class='link' href='https://github.com/micahjones13'>Micah Jones</a></p>
     </footer>
 
 </body>
