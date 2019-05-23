@@ -131,7 +131,6 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 100;
 }
 .nav-container h1 {
   font-size: 3.4rem;
@@ -159,12 +158,13 @@ table {
   color: #006400;
 }
 .nav-container a:hover {
-  color: black;
+  color: #000;
 }
 header {
   border-bottom: 3px solid #000;
   position: sticky;
   top: 0;
+  z-index: 100;
   background: #98ff98;
 }
 @media (max-width: 500px) {
@@ -174,9 +174,11 @@ header {
 }
 body {
   background: #f5fffa;
+  z-index: 1;
 }
 body p {
   font-family: 'PT Sans', sans-serif;
+  font-size: 1.3rem;
 }
 body h1,
 body h2,
@@ -204,12 +206,12 @@ body .text-content {
   padding: 2%;
 }
 body .text-content p {
-  font-size: 1.3rem;
   padding: 1%;
 }
 @media (max-width: 500px) {
   body .text-content {
     width: 100%;
+    text-align: center;
   }
 }
 body .content {
@@ -369,7 +371,7 @@ body .info-tabs .tabs .tabs-link {
   font-size: 1.5rem;
   background-color: #008000;
   border-right: 1px solid white;
-  color: white;
+  color: #FFF;
   cursor: pointer;
 }
 body .info-tabs .tabs .tabs-link:hover {
@@ -378,16 +380,17 @@ body .info-tabs .tabs .tabs-link:hover {
 body .info-tabs .tabs .tabs-link-selected {
   border-right: 1px solid #006400;
   background-color: #f5fffa;
-  color: black;
+  color: #000;
 }
 body .info-tabs .tabs .tabs-link-selected:hover {
-  background-color: white;
+  background-color: #FFF;
 }
 body .new-header-container {
   display: none;
 }
 @media (max-width: 500px) {
   body .new-header-container {
+    z-index: 100;
     position: sticky;
     top: 0;
     width: 100%;
@@ -440,6 +443,21 @@ body .new-header-container {
     display: none;
   }
 }
+body .mobile-para {
+  display: none;
+}
+@media (max-width: 800px) {
+  body .mobile-para {
+    display: block;
+    text-align: center;
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
+  body .mobile-para {
+    padding: 2%;
+  }
+}
 footer {
   border-top: 3px solid #000;
   background: #98ff98;
@@ -447,7 +465,7 @@ footer {
 footer p {
   font-size: 0.9rem;
   text-align: center;
-  padding: 15px;
+  padding: 0.5%;
 }
 footer .link {
   font-family: 'PT Sans', sans-serif;
