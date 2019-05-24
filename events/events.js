@@ -10,20 +10,6 @@ singUp.addEventListener('click', (event) =>{
     document.location.href= "https://safespace-app.netlify.com/" ;
 });
 
-// add an event to change the mobile view 'new-header-container' to lower opacity on scroll
-//opacity for navBar2
-// body.addEventListener('wheel', (event) => {
-//     //change the opacity for a limited time
-//     navBar.style.opacity = '.5';
-
-//     //change it back to solid after a short time
-//     setTimeout(function () {
-//         navBar.style.opacity = '1';
-//     }, 800)
-
-// })
-
-
 //alter background color for tabItems
 tabItems.addEventListener('mouseenter', (event) => {
     tabItems.style.background = '#98ff98'; 
